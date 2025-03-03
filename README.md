@@ -16,7 +16,7 @@ Emoji Odyssey is an engaging and interactive word-guessing game where players de
 ## 📥 Installation
 ### **1️⃣ Clone the Repository**
 ```sh
-git clone [https://github.com/your-username/EmojiOdyssey.git](https://github.com/Tharanitharan-M/emoji-odyssey.git)
+git clone https://github.com/Tharanitharan-M/emoji-odyssey.git
 cd EmojiOdyssey
 ```
 
