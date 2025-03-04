@@ -12,23 +12,24 @@ Emoji Odyssey is a fun and interactive word puzzle game where players guess word
 
 ## Screenshots
 
+
 ### Sign-In Page
-![Sign-In Page](screenshots/signin%20page.png)
+<img src="screenshot/signin page.png" width="250">
 
 ### Genre Selection
-![Genre Selection](screenshots/genres.png)
+<img src="screenshot/genres.png" width="250">
 
 ### Level Selection
-![Level Selection](screenshots/levels.png)
+<img src="screenshot/levels.png" width="250">
 
-### Gameplay
-![Gameplay](screenshots/game.png)
+### Game Screen
+<img src="screenshot/game.png" width="250">
 
-### Correct Answer Screen
-![Success Screen](screenshots/sucess.png)
+### Correct Answer
+<img src="screenshot/sucess.png" width="250">
 
-### Incorrect Answer Screen
-![Failed Attempt](screenshots/failed.png)
+### Incorrect Answer
+<img src="screenshot/failed.png" width="250">
 
 ## How to Play
 
