@@ -2,35 +2,38 @@ import SwiftUI
 
 struct LevelSelectionView: View {
     var selectedGenre: String
+    @ObservedObject var gameData = GameData()
+
     let levels = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
 
-    @State private var completedLevel: Int
-
-    init(selectedGenre: String) {
-        self.selectedGenre = selectedGenre
-        _completedLevel = State(initialValue: UserDefaults.standard.integer(forKey: "completedLevel_\(selectedGenre)"))
-    }
-
     var body: some View {
-        VStack {
-            Text("\(selectedGenre) - Select a Level")
-                .font(.largeTitle)
+        NavigationStack {
+            VStack(spacing: 20) {
+                Text("\(selectedGenre) - Select a Level")
+                    .font(.largeTitle)
+                    .bold()
 
-            ForEach(0..<levels.count, id: \.self) { index in
-                NavigationLink(destination: GameView(selectedGenre: selectedGenre, level: index + 1)) {
-                    Text(levels[index])
-                        .frame(maxWidth: .infinity)
-                        .padding()
-                        .background(index <= completedLevel ? Color.green : Color.gray)
-                        .foregroundColor(.white)
-                        .cornerRadius(10)
+                ForEach(1..<6, id: \.self) { level in
+                    let isUnlocked = level == 1 || gameData.isLevelCompleted(genre: selectedGenre, level: level - 1)
+
+                    NavigationLink(
+                        destination: isUnlocked ? GameView(selectedGenre: selectedGenre, level: level, gameData: gameData) : nil
+                    ) {
+                        Text("Level \(level)")
+                            .frame(maxWidth: .infinity)
+                            .padding()
+                            .background(isUnlocked ? Color.green : Color.gray)
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
+                            .font(.title2)
+                    }
+                    .disabled(!isUnlocked)
+                    .padding(.horizontal)
                 }
-                .padding(.horizontal)
-                .disabled(index > completedLevel)
+
+                Spacer()
             }
-        }
-        .onAppear {
-            completedLevel = UserDefaults.standard.integer(forKey: "completedLevel_\(selectedGenre)")
+            .padding()
         }
     }
 }
