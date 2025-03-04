@@ -1,73 +1,64 @@
-# 🎮 Emoji Odyssey
+# Emoji Odyssey
 
-Emoji Odyssey is an engaging and interactive word-guessing game where players decipher emoji clues to guess the correct words. With multiple genres and progressive difficulty, players will test their knowledge while having fun!
+Emoji Odyssey is a fun and interactive word puzzle game where players guess words based on emoji clues. The game includes multiple genres, each with different levels to challenge the players.
 
----
+## Features
 
-## 🕹️ Game Features
-- **Multiple Genres**: Choose from **Movies, Famous People, and Phrases**.
-- **Progressive Levels**: Unlock new levels as you complete challenges.
-- **Sound Effects**: Enjoy immersive audio feedback for correct answers, wrong answers, and navigation.
-- **30-Second Lockout Timer**: After multiple incorrect attempts, players must wait before retrying.
-- **User-Friendly UI**: Simple and intuitive gameplay with smooth navigation.
+- **Multiple Genres:** Choose from categories like Movies, Famous People, and Phrases.
+- **Level Progression:** Unlock levels as you complete challenges.
+- **Lockout Timer:** Prevents multiple incorrect attempts within a short period.
+- **Sound Effects:** Engaging audio feedback for correct and incorrect answers.
+- **Responsive Design:** Adaptive layout for different screen sizes.
 
----
+## Screenshots
 
-## 📥 Installation
-### **1️⃣ Clone the Repository**
-```sh
-git clone https://github.com/Tharanitharan-M/emoji-odyssey.git
-cd EmojiOdyssey
-```
+### Sign-In Page
+![Sign-In Page](screenshots/signin%20page.png)
 
-### **2️⃣ Open in Xcode**
-1. Launch **Xcode**.
-2. Open the `EmojiOdyssey.xcodeproj` file.
-3. Ensure **SwiftUI** and **AVFoundation** frameworks are included.
+### Genre Selection
+![Genre Selection](screenshots/genres.png)
 
-### **3️⃣ Run the Game**
-1. Click **Build & Run** in Xcode.
-2. The game should launch in the **iOS Simulator** or on a connected device.
+### Level Selection
+![Level Selection](screenshots/levels.png)
 
----
+### Gameplay
+![Gameplay](screenshots/game.png)
 
-## 🎵 Sound Effects
-- ✅ **Correct Answer**: `success.wav`
-- ❌ **Wrong Answer**: `error.wav`
-- 🔘 **Button Clicks**: `click.wav`
-- 🏆 **Level Completion**: `level_complete.wav`
-- 🔄 **Navigation Sounds**: `navigate.wav`
+### Correct Answer Screen
+![Success Screen](screenshots/sucess.png)
 
-📝 **Make sure these sound files are added** to the **Xcode project under Assets > Sounds**.
+### Incorrect Answer Screen
+![Failed Attempt](screenshots/failed.png)
 
----
+## How to Play
 
-## 🚀 Game Flow
-1️⃣ **Login Screen** → Enter your **Name & Age**.  
-2️⃣ **Genre Selection** → Pick a category (**Movies, Famous People, Phrases**).  
-3️⃣ **Level Selection** → Choose a **level to play**.  
-4️⃣ **Game Screen** → Solve the **emoji puzzle** by typing the correct answer.  
-5️⃣ **Win & Progress** → Unlock new levels as you guess correctly.
+1. **Sign In** - Enter your name and age to begin.
+2. **Select a Genre** - Choose from Movies, Famous People, or Phrases.
+3. **Pick a Level** - Start with level 1 and unlock higher levels as you progress.
+4. **Guess the Word** - Use the emojis as hints to type the correct word.
+5. **Submit Your Answer** - Get instant feedback on your guess.
+6. **Move to the Next Level** - If correct, proceed to the next level; otherwise, retry after the lockout timer ends.
 
-🔙 **Back Navigation**
-- Press **Back in Game** → Returns to **Level Selection**.
-- Press **Back in Levels** → Returns to **Genre Selection**.
+## Installation
 
----
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/Tharanitharan-M/emoji-odyssey.git
+   ```
+2. Open the project in Xcode.
+3. Run the project on an iOS simulator or device.
 
-## 🛠️ Contributing
-Want to enhance Emoji Odyssey?
-1. **Fork the repo** and create a new branch.
-2. **Make your changes** (new levels, bug fixes, UI improvements).
-3. **Commit & push** your changes.
-4. **Submit a Pull Request**.
+## Dependencies
+- SwiftUI for UI design
+- AVKit for sound effects
 
----
+## Future Enhancements
+- More genres and levels
+- Advanced hint system
+- Multiplayer mode
 
-## 📜 License
-This project is **open-source** under the **MIT License**.
+## Contributing
+Feel free to contribute by submitting pull requests or reporting issues.
 
----
-
-## 🤝 Connect with Me
-- LinkedIn: [Tharanitharan Muthuthirumaran](https://www.linkedin.com/in/tharanitharanm/)
+## License
+This project is licensed under the MIT License.
